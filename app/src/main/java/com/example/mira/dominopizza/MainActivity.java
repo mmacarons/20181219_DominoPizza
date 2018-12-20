@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends BaseActivity {
 
     LinearLayout orderBtn;
+    Button LoginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,13 @@ public class MainActivity extends BaseActivity {
     @Override
     public void setupEvents() {
 
+        LoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
         orderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +57,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public void bindViews() {
 
+        LoginBtn = findViewById(R.id.LoginBtn);
         orderBtn = findViewById(R.id.orderBtn);
 
 
