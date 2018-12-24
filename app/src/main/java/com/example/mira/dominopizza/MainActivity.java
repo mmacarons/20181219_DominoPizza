@@ -1,19 +1,18 @@
 package com.example.mira.dominopizza;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends BaseActivity {
 
     LinearLayout orderBtn;
     Button LoginBtn;
+    private android.widget.TextView pizzaBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +45,13 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+        pizzaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, MenuListActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -57,8 +63,9 @@ public class MainActivity extends BaseActivity {
     @Override
     public void bindViews() {
 
-        LoginBtn = findViewById(R.id.LoginBtn);
-        orderBtn = findViewById(R.id.orderBtn);
+        this.LoginBtn = (Button) findViewById(R.id.LoginBtn);
+        this.orderBtn = (LinearLayout) findViewById(R.id.orderBtn);
+        this.pizzaBtn = (TextView) findViewById(R.id.pizzaBtn);
 
 
     }
