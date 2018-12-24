@@ -41,12 +41,14 @@
         android:background="#ffffff">
 
         <EditText
+            android:id="@+id/idTxt"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:textSize="10dp"
             android:hint="아이디"/>
 
         <EditText
+            android:id="@+id/passwordTxt"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"

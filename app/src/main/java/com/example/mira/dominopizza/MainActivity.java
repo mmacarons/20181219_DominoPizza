@@ -57,6 +57,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setValues() {
+        String userId = getIntent().getStringExtra("입력아이디");
 
     }
 
