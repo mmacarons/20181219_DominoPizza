@@ -59,6 +59,10 @@ public class MainActivity extends BaseActivity {
     public void setValues() {
         String userId = getIntent().getStringExtra("입력아이디");
 
+        if (userId != null) {
+            setTitle(String.format("%s님 안녕하세요!", userId));
+        }
+
     }
 
     @Override

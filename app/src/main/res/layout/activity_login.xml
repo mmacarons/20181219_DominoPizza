@@ -45,7 +45,9 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:textSize="10dp"
-            android:hint="아이디"/>
+            android:hint="아이디"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
 
         <EditText
             android:id="@+id/passwordTxt"
@@ -54,7 +56,9 @@
             android:layout_height="40dp"
             android:textSize="10dp"
             android:inputType="textPassword"
-            android:hint="비밀번호"/>
+            android:hint="비밀번호"
+            android:singleLine="true"
+            android:imeOptions="actionGo"/>
 
         <LinearLayout
             android:layout_marginTop="5dp"
