@@ -88,7 +88,8 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="로그인"
-            android:background="#ff0000"
+            android:textStyle="bold"
+            android:background="#FB3A51"
             android:textColor="#ffffff"/>
 
         <Button
@@ -96,13 +97,18 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="PAYCO로 로그인"
-            android:textColor="#ff0000"/>
+            android:textStyle="bold"
+            android:background="#DE2B29"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="NAVER로 로그인"/>
+            android:text="NAVER로 로그인"
+            android:textStyle="bold"
+            android:background="#4ECA64"
+            android:textColor="#FFFFFF"/>
 
         <LinearLayout
             android:layout_marginTop="20dp"
@@ -124,10 +130,11 @@
                 android:padding="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
-                android:background="#035BED"
+                android:background="#1C78A4"
                 android:textColor="#FFFFFF"
                 android:textSize="11dp"
-                android:text="회원 가입하기"/>
+                android:text="회원 가입하기"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
@@ -151,10 +158,11 @@
                 android:padding="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
-                android:background="#035BED"
+                android:background="#1C78A4"
                 android:textColor="#FFFFFF"
                 android:textSize="11dp"
-                android:text="아이디/비밀번호 찾기"/>
+                android:text="아이디/비밀번호 찾기"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
@@ -172,16 +180,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#035BED"
+        android:background="#194380"
         android:gravity="center">
 
-        <TextView
+
+        <LinearLayout
             android:layout_margin="15dp"
             android:layout_marginLeft="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
-            android:text="온라인 회원이면 누구나 누릴 수 있는\n도미노 온라인 매니아!"/>
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="온라인 회원이면 누구나 누릴 수 있는"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A0DAF8"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="도미노 온라인 매니아!"/>
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="0dp"
