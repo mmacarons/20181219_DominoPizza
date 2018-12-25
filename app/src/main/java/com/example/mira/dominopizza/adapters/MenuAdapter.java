@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.mira.dominopizza.R;
@@ -36,10 +37,16 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
         }
 
         TextView nameTxt = row.findViewById(R.id.nameTxt);
+        TextView largePriceTxt = row.findViewById(R.id.largePriceTxt);
+        TextView mediumPriceTxt = row.findViewById(R.id.mediumPriceTxt);
+        ImageView logoImgView = row.findViewById(R.id.logoImgView);
 
         Menu data = mList.get(position);
 
         nameTxt.setText(data.getName());
+        largePriceTxt.setText(data.getLargePrice());
+        mediumPriceTxt.setText(data.getMediumPrice());
+
 
         return row;
 

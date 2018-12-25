@@ -254,6 +254,7 @@
             android:background="#F2F2F2"/>
 
         <LinearLayout
+            android:id="@+id/bigOrderBtn"
             android:padding="5dp"
             android:layout_width="0dp"
             android:layout_height="70dp"
@@ -308,6 +309,7 @@
             android:background="#F2F2F2"/>
 
         <LinearLayout
+            android:id="@+id/openSurveyBtn"
             android:padding="5dp"
             android:layout_width="0dp"
             android:layout_height="70dp"
