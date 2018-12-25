@@ -5,13 +5,13 @@ public class Menu {
     private String name;
     private String largePrice;
     private String mediumPrice;
-    private String logoImgView;
+    private String logoURL;
 
-    public Menu(String name, String largePrice, String mediumPrice, String logoImgView) {
+    public Menu(String name, String largePrice, String mediumPrice, String logoURL) {
         this.name = name;
         this.largePrice = largePrice;
         this.mediumPrice = mediumPrice;
-        this.logoImgView = logoImgView;
+        this.logoURL = logoURL;
     }
 
     public String getName() {
@@ -38,11 +38,11 @@ public class Menu {
         this.mediumPrice = mediumPrice;
     }
 
-    public String getLogoImgView() {
-        return logoImgView;
+    public String getLogoURL() {
+        return logoURL;
     }
 
-    public void setLogoImgView(String logoImgView) {
-        this.logoImgView = logoImgView;
+    public void setLogoURL(String logoURL) {
+        this.logoURL = logoURL;
     }
 }

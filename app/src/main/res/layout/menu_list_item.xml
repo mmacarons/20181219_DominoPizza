@@ -38,7 +38,7 @@
                     android:paddingRight="5dp"
                     android:textSize="10sp"
                     android:text="NEW"
-                    android:background="#FF0000"
+                    android:background="#E51937"
                     android:textColor="#FFFFFF"/>
 
                 <TextView
@@ -49,7 +49,7 @@
                     android:paddingRight="5dp"
                     android:textSize="10sp"
                     android:text="주문시 사이드디시 반값"
-                    android:background="#0000FF"
+                    android:background="#207BD1"
                     android:textColor="#FFFFFF"/>
 
             </LinearLayout>
@@ -76,7 +76,8 @@
                     android:paddingLeft="3dp"
                     android:paddingRight="3dp"
                     android:textSize="12dp"
-                    android:background="#FF0000"
+                    android:textStyle="bold"
+                    android:background="#F06418"
                     android:textColor="#FFFFFF"
                     android:gravity="center"
                     android:text="L"/>
@@ -102,7 +103,8 @@
                     android:paddingLeft="3dp"
                     android:paddingRight="3dp"
                     android:textSize="12dp"
-                    android:background="#FF9900"
+                    android:textStyle="bold"
+                    android:background="#F7A11A"
                     android:textColor="#FFFFFF"
                     android:gravity="center"
                     android:text="M"/>
@@ -135,7 +137,8 @@
                     android:layout_height="25dp"
                     android:layout_weight="1"
                     android:text="상세보기"
-                    android:background="#000000"
+                    android:textStyle="bold"
+                    android:background="#435861"
                     android:textColor="#FFFFFF"/>
 
                 <TextView
@@ -147,7 +150,8 @@
                     android:layout_height="25dp"
                     android:layout_weight="1"
                     android:text="바로주문"
-                    android:background="#0000FF"
+                    android:textStyle="bold"
+                    android:background="#009AE0"
                     android:textColor="#FFFFFF"/>
 
             </LinearLayout>
