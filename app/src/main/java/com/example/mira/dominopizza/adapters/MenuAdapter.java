@@ -5,8 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.mira.dominopizza.R;
@@ -35,6 +37,7 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
             row = inf.inflate(R.layout.menu_list_item, null);
         }
 
+        Button detailBtn = row.findViewById(R.id.detailBtn);
         TextView nameTxt = row.findViewById(R.id.nameTxt);
         TextView largePriceTxt = row.findViewById(R.id.largePriceTxt);
         TextView mediumPriceTxt = row.findViewById(R.id.mediumPriceTxt);
@@ -47,6 +50,12 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
         mediumPriceTxt.setText(data.getMediumPrice());
         Glide.with(mContext).load(data.getLogoURL()).into(logoImgView);
 
+        detailBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, "상세페이지 이동", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return row;
 

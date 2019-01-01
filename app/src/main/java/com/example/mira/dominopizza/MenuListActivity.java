@@ -1,7 +1,10 @@
 package com.example.mira.dominopizza;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.mira.dominopizza.adapters.MenuAdapter;
 import com.example.mira.dominopizza.datas.Menu;
@@ -26,6 +29,8 @@ public class MenuListActivity extends BaseActivity {
 
     @Override
     public void setupEvents() {
+
+
 
     }
 
@@ -63,6 +68,7 @@ public class MenuListActivity extends BaseActivity {
     @Override
     public void bindViews() {
         this.listView = (ListView) findViewById(R.id.listView);
+
 
     }
 
