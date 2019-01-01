@@ -38,7 +38,7 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
         }
 
         Button detailBtn = row.findViewById(R.id.detailBtn);
-        TextView nameTxt = row.findViewById(R.id.nameTxt);
+        final TextView nameTxt = row.findViewById(R.id.nameTxt);
         TextView largePriceTxt = row.findViewById(R.id.largePriceTxt);
         TextView mediumPriceTxt = row.findViewById(R.id.mediumPriceTxt);
         ImageView logoImgView = row.findViewById(R.id.logoImgView);
@@ -53,7 +53,7 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
         detailBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "상세페이지 이동", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, nameTxt.getText().toString() + " 상세보기", Toast.LENGTH_SHORT).show();
             }
         });
 
