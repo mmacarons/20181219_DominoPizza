@@ -28,6 +28,14 @@ public class MainActivity extends BaseActivity {
         setupEvents();
         setValues();
 
+        Toast.makeText(mContext, "onCreate", Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(mContext, "onResume", Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -43,8 +43,9 @@ public class LoginActivity extends BaseActivity {
                 }
                 else {
                     Toast.makeText(mContext, "로그인에 성공했습니다.", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(mContext, MainActivity.class);
+                    Intent intent = new Intent(mContext, MenuListActivity.class);
                     intent.putExtra("입력아이디", inputid);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
 
                 }
