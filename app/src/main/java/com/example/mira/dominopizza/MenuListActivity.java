@@ -1,13 +1,18 @@
 package com.example.mira.dominopizza;
 
+import android.app.Person;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mira.dominopizza.adapters.MenuAdapter;
 import com.example.mira.dominopizza.datas.Menu;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -30,11 +35,17 @@ public class MenuListActivity extends BaseActivity {
     @Override
     public void setupEvents() {
 
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(mContext, DetailActivity.class);
-                startActivity(intent);
+
+                View oParentView = (View) view.getParent();
+                TextView oName = oParentView.findViewById(R.id.nameTxt);
+                String oNameTxt = oName.getText().toString();
+                Toast.makeText(mContext, oNameTxt + "클릭", Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -75,6 +86,7 @@ public class MenuListActivity extends BaseActivity {
     @Override
     public void bindViews() {
         this.listView = (ListView) findViewById(R.id.listView);
+
 
 
     }
