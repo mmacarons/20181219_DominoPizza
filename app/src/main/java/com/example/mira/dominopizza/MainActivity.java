@@ -47,8 +47,8 @@ public class MainActivity extends BaseActivity {
         noticeImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Toast.makeText(mContext, "공지화면으로 이동합니다.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(mContext, NoticeActivity.class);
+                startActivity(intent);
             }
         });
 
