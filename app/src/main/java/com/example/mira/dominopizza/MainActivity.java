@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ public class MainActivity extends BaseActivity {
     private android.widget.TextView pizzaBtn;
     private LinearLayout openSurveyBtn;
     private LinearLayout bigOrderBtn;
+    private android.widget.ImageView noticeImg;
 
 
     @Override
@@ -40,6 +42,15 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setupEvents() {
+
+
+        noticeImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(mContext, "공지화면으로 이동합니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +117,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public void bindViews() {
 
+        this.noticeImg = (ImageView) findViewById(R.id.noticeImg);
         this.LoginBtn = (Button) findViewById(R.id.LoginBtn);
         this.openSurveyBtn = (LinearLayout) findViewById(R.id.openSurveyBtn);
         this.bigOrderBtn = (LinearLayout) findViewById(R.id.bigOrderBtn);
