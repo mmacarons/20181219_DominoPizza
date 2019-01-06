@@ -21,7 +21,8 @@
         <activity android:name=".OrderActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MenuListActivity" />
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".NoticeActivity"></activity>
     </application>
 
 </manifest>
