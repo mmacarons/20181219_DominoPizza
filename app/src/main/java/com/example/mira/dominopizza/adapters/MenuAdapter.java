@@ -35,7 +35,7 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
             row = inf.inflate(R.layout.menu_list_item, null);
         }
 
-        final TextView nameTxt = row.findViewById(R.id.nameTxt);
+        TextView nameTxt = row.findViewById(R.id.nameTxt);
         TextView largePriceTxt = row.findViewById(R.id.largePriceTxt);
         TextView mediumPriceTxt = row.findViewById(R.id.mediumPriceTxt);
         ImageView logoImgView = row.findViewById(R.id.logoImgView);

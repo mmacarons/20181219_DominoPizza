@@ -35,19 +35,15 @@ public class MenuListActivity extends BaseActivity {
     @Override
     public void setupEvents() {
 
-
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                View oParentView = (View) view.getParent();
-                TextView oName = oParentView.findViewById(R.id.nameTxt);
-                String oNameTxt = oName.getText().toString();
-                Toast.makeText(mContext, oNameTxt + "클릭", Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(mContext, menus.get(position).getName(), Toast.LENGTH_SHORT).show();
             }
         });
+
+
+
 
 
     }
